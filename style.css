@@ -56,11 +56,10 @@ img {
 
 h1 {
 	font-weight: 400;
+	margin: 0;
 }
 
 .Preparation-time {
-	display: flex;
-	flex-direction: column;
 	background: hsl(330, 100%, 98%);
 	padding: 10px;
 	border-radius: 10px;
@@ -76,11 +75,14 @@ h1 {
 	padding-left: 18px;
 }
 
-.Preparation-time > ul > li {
-	padding-left: 10px;
+ul > li {
 	margin: 10px;
 	position: relative;
 	list-style-type: none;
+}
+
+.Preparation-time > ul > li {
+	padding-left: 10px;
 }
 
 .Preparation-time > ul > li::before {
@@ -93,7 +95,7 @@ h1 {
 	transform: translateY(-50%);
 }
 
-.Preparation-time > ul > li p {
+li p {
   margin: 0;
 	display: inline;
 	font-weight: 600;
@@ -105,8 +107,6 @@ h2 {
 }
 
 .Ingredients {
-	display: flex;
-	flex-direction: column;
 	border-bottom: 1px solid hsl(0, 0%, 80%);
 	padding-bottom: 15px;
 }
@@ -117,10 +117,6 @@ h2 {
 
 .Ingredients > ul > li {
 	padding-left: 20px;
-	margin: 10px;
-	font-size: 14px;
-	position: relative;
-	list-style-type: none;
 }
 
 .Ingredients > ul > li::before {
@@ -134,8 +130,6 @@ h2 {
 }
 
 .Instructions {
-	display: flex;
-	flex-direction: column;
 	border-bottom: 1px solid hsl(0, 0%, 80%);
 	padding-bottom: 10px;
 }
@@ -143,12 +137,6 @@ h2 {
 .Instructions > ol {
 	padding-left: 15px;
 	list-style-type: decimal;
-}
-
-.Instructions > ol > li p {
-  margin: 0;
-	display: inline;
-	font-weight: 600;
 }
 
 .Instructions > ol > li {
@@ -164,32 +152,6 @@ h2 {
 li {
 	font-weight: 400;
 }
-
-/* .nutrition-facts {
-  display: flex;
-  flex-direction: column;
-	padding-left: 20px;
-}
-
-.nutrition-item {
-  display: flex;
-  justify-content: space-between;
-  padding: 5px 0;
-	border-bottom: 1px solid hsl(0, 0%, 80%);
-	padding-bottom: 10px;
-	padding-right: 100px;
-
-}
-
-.nutrition-item dt {
-}
-
-.nutrition-item dd {
-  margin: 0;
-	font-weight: bold;
-	color: hsl(14, 45%, 36%);
-} */
-
 
 .nutrition-facts {
   display: block;
